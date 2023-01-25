@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MERCADO LIBRE</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-section container">
+        <img class="logo" src="./images/logo.png" alt="" />
+        <p>Anderson Gordillo - Ingrith Guevara - Laura Castro</p>
+        <div>
+          <img
+            onmouseover="showCart(this)"
+            class="cart"
+            src="./images/cart.png"
+            alt=""
+          />
+          <p class="count-product">0</p>
+        </div>
+        <div class="cart-products" id="products-id">
+          <p class="close-btn" onclick="closeBtn()">X</p>
+          <h3>CARRITO</h3>
+          <div class="card-items">
+            <!-- <div class="item">
+                        <img src="./images/products/keyboard-1.jpg" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">45.50$</h5>
+                            <h6>Amount: 3</h6>
+                        </div>
+                        <span>X</span>
+                    </div>
+    
+                    <div class="item">
+                        <img src="./images/products/keyboard-1.jpg" alt="">
+                        <div class="item-content">
+                            <h5>name of product name of product name of product</h5>
+                            <h5 class="cart-price">45.50$</h5>
+                            <h6>Amount: 3</h6>
+                        </div>
+                        <span class="delete-product" data-id="">X</span>
+                    </div> -->
+          </div>
+          <h2>Total: <strong class="price-total">0</strong> $</h2>
+        </div>
+      </div>
+    </header>
+
+    <section class="container">
+      <div class="products">
+        <!--
+        <div class="carts">
+          <div class="galeria">
+            <div class="columna">
+              <img src="./images/products/c1.jpg" alt="" />
+              <div class="fila">
+                <img src="./images/products/c2.jpg" alt="" />
+                <img src="./images/products/c4.jpg" alt="" />
+                <img src="./images/products/c3.jpg" alt="" />
+              </div>
+            </div>
+            <p><span>20</span>$</p>
+          </div>
+          <p class="title">Tempest Cataclysm Combo 3 En 1 Gaming Teclado</p>
+          <a href="" data-id="45" class="btn-add-cart">add to cart</a>
+        </div>
+
+      -->
+
+        <div class="carts">
+          <div>
+            <img src="./images/products/c1.jpg" alt="" />
+
+            <img
+              src="./images/products/c2.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+
+            <img
+              src="./images/products/c3.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+            <img
+              src="./images/products/c4.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+
+            <p><span>105.600.000</span>$</p>
+          </div>
+          <p class="title">
+            Toyota Corolla GR-S, La más reciente generación Corolla se presentó
+            en Colombia a finales de 2019, procedente de Brasil. Estrena
+            plataforma, diseño y conjunto mecánico. En términos de dimensiones
+            generales, el modelo tiene 4.630 mm de largo (+10 mm respecto a la
+            generación anterior), 1.780 mm de ancho (+5 mm) y 1.455 mm de alto
+            (-20 mm), mientras que la distancia entre ejes se mantuvo, con 2.700
+            mm, así como el volumen del baúl, de 470 litros. Una de sus
+            principales novedades, es que por primera vez la marca trae al país
+            una versión híbrida. La versión de gasolina dispone de un motor 2,0
+            litros de 168 hp y 20,4 kg-m, gestionado por una moderna caja CVT.
+            Por su parte, el modelo híbrido cuenta de base con un propulsor 1,8
+            L; en conjunto, el sistema híbrido entrega una potencia de 126 hp y
+            17,3 kg-m de torque. La versión Híbrida más equipada cuenta con el
+            nuevo sistema de seguridad desarrollado por Toyota, el Toyota Safety
+            Sense, que busca minimizar los accidentes y fatalidades en la vía.
+          </p>
+          <a href="" data-id="1" class="btn-add-cart">Añadir al carrito</a>
+        </div>
+
+        <div class="carts">
+          <div>
+            <img src="./images/products/fj1.jpg" alt="" />
+
+            <img
+              src="./images/products/fj2.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+
+            <img
+              src="./images/products/fj3.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+            <img
+              src="./images/products/fj4.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+
+            <p><span>207.900.000</span>$</p>
+          </div>
+          <p class="title">
+            Toyota FJ Cruiser , Potente camioneta... una leyenda viviente de la
+            firma nipona que cada día demuestra que es la dueña del offroad. Su
+            diseño exterior robusto y musculoso son su ADN, que deja perplejas
+            en el camino a quienes la han querido imitar. No podríamos hablar de
+            una todoterreno como esta, sin nombrar su impulsor de 4.0L que le
+            entrega una potencia de 270 caballos de fuerza y un 380 Nm, que está
+            acoplado a una caja automática de cinco relaciones. Su display
+            multi-información lo componen: una brújula, termómetro e
+            inclinómetro.
+          </p>
+          <a href="" data-id="2" class="btn-add-cart">Añadir al carrito</a>
+        </div>
+
+        <div class="carts">
+          <div>
+            <img src="./images/products/h1.jpg" alt="" />
+
+            <img
+              src="./images/products/h2.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+
+            <img
+              src="./images/products/h3.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+            <img
+              src="./images/products/h4.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+
+            <p><span>164.800.000</span>$</p>
+          </div>
+          <p class="title">
+            Toyota Hilux, Este nuevo modelo hereda los valores fundamentales de
+            la marca en términos de durabilidad y confiabilidad y los lleva a
+            otro nivel, convirtiéndose en el nuevo punto de referencia para la
+            categoría ya que reúne elementos de confort y lujo de un SUV. El
+            motor 1GD es de 2.8 litros, cuenta con una potencia de 174 caballos
+            de fuerza y 309 lb-pie de torque en su versión mecánica y 332 lb-pie
+            de torque en su versión automática. Por su parte, el motor 2GD
+            también optimizado, tiene una potencia de 147 HP y 295 lb-pie de
+            torque. La pick-up tiene un chasis que ofrece fortaleza, seguridad y
+            una conducción cómoda y deportiva en caminos pavimentados. Además su
+            suspensión renovada mejora la estabilidad en carretera y evoluciona
+            su capacidad 4x4.
+          </p>
+          <a href="" data-id="3" class="btn-add-cart">Añadir al carrito</a>
+        </div>
+
+        <div class="carts">
+          <div>
+            <img src="./images/products/r1.jpg" alt="" />
+
+            <img
+              src="./images/products/r2.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+
+            <img
+              src="./images/products/r3.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+            <img
+              src="./images/products/r4.jpg"
+              alt=""
+              width="100px"
+              height="100px"
+            />
+
+            <p><span>220.500.000 </span>$</p>
+          </div>
+          <p class="title">
+            Toyota 4Runner, Camioneta con esencia 4x4, que tiene un diseño
+            robusto y musculoso; nada parece detenerlo. En su interior tiene un
+            atractivo tablero de instrumentos con tacómetro, indicador de
+            temperatura, pantalla LCD, posición de la transmisión y el indicador
+            de conducción ecológica. Cuenta con un motor 4.0L 1GR-FE, V6, que le
+            dan una potencia de 275 caballos de fuerza y 381 Nm que va acoplado
+            a una caja automática secuencial de 5 marchas.
+          </p>
+          <a href="" data-id="4" class="btn-add-cart">Añadir al carrito</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="author">
+        🪐 ANDERSON MAURICIO GORDILLO
+        <a href="https://github.com/anderszzon" target="_blank"
+          >Github= Anderszzon</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      function showCart(x) {
+        document.getElementById("products-id").style.display = "block";
+      }
+      function closeBtn() {
+        document.getElementById("products-id").style.display = "none";
+      }
+    </script>
+    <script src="./custom.js"></script>
+  </body>
+</html>
